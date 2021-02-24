@@ -1,0 +1,34 @@
+let p = new Promise ((resolve, reject) =>{
+    
+    let a = 1 +1;
+    
+    if(a == 2){
+        resolve('Succeeded')
+    } else {
+        reject('Failed')
+    }
+})
+p.then((message) =>{
+    console.log( 'Its resolved and' +message)
+    }).catch((message) =>{
+        console.log( 'Its rejected and' +message)
+    })
+
+  // Another example which shall not be resolved
+  
+    // let p = new Promise ((resolve, reject) =>{
+    
+    //     let a = 1 +2;
+        
+    //     if(a == 2){
+    //         resolve('Succeeded')
+    //     } else {
+    //         reject('Failed')
+    //     }
+    // })
+    // p.then((message) =>{
+    //     console.log( 'Its resolved and' +message)
+    //     }).catch((message) =>{
+    //         console.log( 'Its rejected and' +message)
+    //     })
+    
